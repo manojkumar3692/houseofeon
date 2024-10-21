@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/houseofeon/static/css/main.568e4390.css",
+    "main.js": "/houseofeon/static/js/main.43e979ca.js",
+    "static/js/453.761671ad.chunk.js": "/houseofeon/static/js/453.761671ad.chunk.js",
+    "index.html": "/houseofeon/index.html",
+    "main.568e4390.css.map": "/houseofeon/static/css/main.568e4390.css.map",
+    "main.43e979ca.js.map": "/houseofeon/static/js/main.43e979ca.js.map",
+    "453.761671ad.chunk.js.map": "/houseofeon/static/js/453.761671ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.568e4390.css",
+    "static/js/main.43e979ca.js"
+  ]
+}
