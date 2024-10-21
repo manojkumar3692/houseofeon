@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Countdown from 'react-countdown';
+
 import './App.css'; // Importing custom styles
 
 const App = () => {
+  const videoRef = useRef(null)
     // Renderer for countdown
     const renderer = ({ days, hours, minutes, seconds }) => {
         return (
@@ -29,6 +31,16 @@ const App = () => {
 
     return (
         <div className="coming-soon-container">
+           <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover w-full h-full"
+        >
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />
+        </video>
             <div className="coming-soon-content">
                 <h1 className="brand-name">House of EON</h1>
                 <h2>Luxury Perfume Collection</h2>
