@@ -1,58 +1,47 @@
 import React, {useRef} from 'react';
 import Countdown from 'react-countdown';
-
+import { TextHoverEffect } from "./components/ui/text-hover-effect";
 import './App.css'; // Importing custom styles
+import { SparklesCore } from "./components/ui/sparkles";
+import { BackgroundBeamsDemo } from './components/BackgroundBeamsDemo';
 
 const App = () => {
   const videoRef = useRef(null)
-    // Renderer for countdown
-    const renderer = ({ days, hours, minutes, seconds }) => {
-        return (
-            <div className="countdown">
-                <div className="time-box">
-                    <span>{days}</span>
-                    <p>Days</p>
-                </div>
-                <div className="time-box">
-                    <span>{hours}</span>
-                    <p>Hours</p>
-                </div>
-                <div className="time-box">
-                    <span>{minutes}</span>
-                    <p>Minutes</p>
-                </div>
-                <div className="time-box">
-                    <span>{seconds}</span>
-                    <p>Seconds</p>
-                </div>
-            </div>
-        );
-    };
 
     return (
-        <div className="coming-soon-container">
-           <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="object-cover w-full h-full"
-        >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />
-        </video>
-            <div className="coming-soon-content">
-                <h1 className="brand-name">House of EON</h1>
-                <h2>Luxury Perfume Collection</h2>
-                <p className="subtitle">Launching Soon... Stay tuned for a scent of elegance</p>
-                <Countdown date={new Date('2024-12-01T00:00:00')} renderer={renderer} />
-                <div className="newsletter">
-                    <p>Be the first to know! Subscribe below:</p>
-                    <input type="email" placeholder="Enter your email" />
-                    <button className="subscribe-btn">Notify Me</button>
-                </div>
-            </div>
-        </div>
+      <div>
+    <div className="coming-soon-container">
+    <div className="h-[50rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <h1 className="md:text-6xl text-2xl lg:text-8xl font-bold text-center text-white relative z-20">
+    <div className="h-[8rem] w-[50rem] flex items-center justify-center text-center cursor-pointer">
+  <TextHoverEffect duration={0} text="HOUSE OF EON" />
+</div>
+</h1>
+    <div className="w-[40rem] h-40 relative">
+      {/* Gradients */}
+      <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+      <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+      <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+      <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+      {/* Core component */}
+      <SparklesCore
+          background="transparent"
+          minSize={0.4}
+          maxSize={1}
+          particleDensity={500}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+
+      {/* Radial Gradient to prevent sharp edges */}
+      <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+    </div>
+  </div>
+  </div>
+  <BackgroundBeamsDemo />
+  {/* <BackgroundBeamsDemo/> */}
+  </div>
     );
 };
 

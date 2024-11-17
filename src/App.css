@@ -1,13 +1,16 @@
 /* Styles for the Coming Soon Page */
 .coming-soon-container {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh; */
   height: 100vh;
   background: linear-gradient(to right, #0a0a0a, #1c1c1c);
-  color: #fff;
+  /* color: #fff;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif; */
+  /* font-size: 22px; */
+  /* cursor: pointer; */
 }
 
 .coming-soon-content {
