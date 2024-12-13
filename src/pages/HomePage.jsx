@@ -2,6 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "../common/Navbar";
 import Footer from "../common/Footer";
+import First from "../images/HouseofEonCover.png";
+import Second from "../images/HouseofEonCover_1.jpg";
+import Third from "../images/HouseofEonCover_3.jpg";
+import Fourth from "../images/HouseofEonCover_4.jpg";
+import Eleven from "../images/HouseofEonCover_11.jpg";
+import Fourteen from  "../images/HouseofEonCover_14.jpg";
+import Fifth from "../images/HouseofEonCover_5.jpg"
 
 const HomePage = () => {
   return (
@@ -14,17 +21,17 @@ const HomePage = () => {
           <LeftContent>
             <span>- who we are</span>
             <h2>
-              A Boutique Digital Design Agency Focused on{" "}
+            Luxury Redefined in Cosmetics and Fragrance{" "}
               <span className="qultText">Quality</span>
             </h2>
-            <Button>Work With Us</Button>
+            <Button>Shop With Us</Button>
           </LeftContent>
         </LeftContainer>
 
         <RightContainer>
           <RightContent>
             <Containers>
-            <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img1-1024x1024.jpg"/>
+            <img src={Second}/>
       
               <p>
                 Here's What Industry Insiders Say About Business Cards <br />{" "}
@@ -39,7 +46,7 @@ const HomePage = () => {
               </p>
             </Containers>
             <Containers>
-            <img src=" https://promo-theme.com/luxa/wp-content/uploads/2019/03/img21.jpg"/>
+            <img src={Eleven}/>
            
               <p>
                 Here's What Industry Insiders Say About Business Cards <br />{" "}
@@ -65,7 +72,7 @@ const HomePage = () => {
               </p>
             </Containers>
             <Containers>
-            <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img15.jpg"/>
+            <img src={Fourth}/>
 
               <p>
                 Here's What Industry Insiders Say About Business Cards <br />{" "}
@@ -76,7 +83,7 @@ const HomePage = () => {
 
           <RightContent>
             <Containers>
-            <img src="  https://promo-theme.com/luxa/wp-content/uploads/2019/03/img3.jpg"/>
+            <img src={Fourteen}/>
           
               <p>
                 Here's What Industry Insiders Say About Business Cards <br />{" "}
@@ -94,7 +101,7 @@ const HomePage = () => {
               </p>
             </Containers>
             <Containers>
-                            <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img11.jpg"/>
+            <img src={Fourteen}/>
               <p>
 
                 Here's What Industry Insiders Say About Business Cards <br />{" "}
