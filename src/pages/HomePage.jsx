@@ -1,111 +1,100 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "../common/Navbar";
 import Footer from "../common/Footer";
-import First from "../images/HouseofEonCover.png";
 import Second from "../images/HouseofEonCover_1.jpg";
-import Third from "../images/HouseofEonCover_3.jpg";
 import Fourth from "../images/HouseofEonCover_4.jpg";
 import Eleven from "../images/HouseofEonCover_11.jpg";
-import Fourteen from  "../images/HouseofEonCover_14.jpg";
-import Fifth from "../images/HouseofEonCover_5.jpg"
+import Fourteen from "../images/HouseofEonCover_14.jpg";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  const handleRedirect = () => {
+    window.location.href = "https://www.meesho.com/house-of-eon-bloom-elixir-super-glow-youthful-glowing-skin-enriched-with-niacinamide-rosehip-oil-seabuckthorn-oil-pomegranate-oil-net-weight-30-gm-recommended-for-dry-skin/p/7m6rw1"; // Replace with your target URL
+  };
   return (
     <MainWrap>
-        <Navigation>
+      {/* <Navigation>
         <Navbar />
-        </Navigation>
-      <Contents >  
+        </Navigation> */}
+      <Contents >
         <LeftContainer>
-          <LeftContent>
+          <LeftContent style={{ marginTop: '19rem' }}>
             <span>- who we are</span>
             <h2>
-            Luxury Redefined in Cosmetics and Fragrance{" "}
+              Luxury Redefined in Cosmetics and Fragrance{" "}
               <span className="qultText">Quality</span>
             </h2>
-            <Button>Shop With Us</Button>
+            <Button onClick={handleRedirect}>Shop With Us</Button>
           </LeftContent>
         </LeftContainer>
 
         <RightContainer>
           <RightContent>
             <Containers>
-            <img src={Second}/>
-      
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <img src={Second} />
+
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
             <Containers>
-            <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img12.jpg"/>
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img12.jpg" />
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
             <Containers>
-            <img src={Eleven}/>
-           
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <img src={Eleven} />
+
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
           </RightContent>
 
           <RightContent style={{ marginTop: "7rem" }}>
             <Containers>
-            <img src=" https://promo-theme.com/luxa/wp-content/uploads/2019/03/img2.jpg"/>
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <img src=" https://promo-theme.com/luxa/wp-content/uploads/2019/03/img2.jpg" />
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
             <Containers>
-            <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img5.jpg"/>
-          
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
-              </p>
-            </Containers>
-            <Containers>
-            <img src={Fourth}/>
+              <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img5.jpg" />
 
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
+              </p>
+            </Containers>
+            <Containers>
+              <img src={Fourth} />
+
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
           </RightContent>
 
           <RightContent>
             <Containers>
-            <img src={Fourteen}/>
-          
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <img src={Fourteen} />
+
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
             <Containers>
-            {/* <img src="  https://promo-theme.com/luxa/wp-content/uploads/2019/03/img3.jpg"/> */}
-            <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img8-1024x638.jpg"/>
+              {/* <img src="  https://promo-theme.com/luxa/wp-content/uploads/2019/03/img3.jpg"/> */}
+              <img src="https://promo-theme.com/luxa/wp-content/uploads/2019/03/img8-1024x638.jpg" />
 
 
-              <p>
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
             <Containers>
-            <img src={Fourteen}/>
-              <p>
-
-                Here's What Industry Insiders Say About Business Cards <br />{" "}
-                Branding
+              <img src={Fourteen} />
+              <p onClick={handleRedirect}>
+              Bloom in Radiance with Our Moringa & Ashwagandha Face Cream! 
               </p>
             </Containers>
           </RightContent>
@@ -145,21 +134,21 @@ const LeftContent = styled.div`
   padding: 4rem 2rem;
 
   h2 {
-    color: #fff;
+    color: ${({ theme }) => theme.colors.text};
     font-size: 48px;
     font-weight: 700;
     line-height: 50px;
   }
 
   span {
-    /* text-transform: uppercase; */
-    color: rgb(254, 180, 6);
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: 14px;
     font-weight: 600;
   }
 
   .qultText {
-    color: rgb(254, 180, 6);
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: 48px;
     font-weight: 700;
     line-height: 50px;
@@ -197,6 +186,7 @@ const RightContent = styled.div`
 
   :hover {
     filter: grayscale(0%);
+    cursor: pointer;
     -webkit-transition: border 400ms ease;
     -moz-transition: border 400ms ease;
     -o-transition: border 400ms ease;
@@ -219,12 +209,11 @@ const RightContent = styled.div`
 
 const Containers = styled.div`
   display: flex;
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
   height: 400px;
   align-items: center;
   justify-content: center;
   background-color: #333;
-  /* background-image: url("https://promo-theme.com/luxa/wp-content/uploads/2019/03/img2.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -307,7 +296,7 @@ const Containers = styled.div`
 `;
 
 const Button = styled.button`
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
   text-transform: uppercase;
   background: transparent;
   border: 2px solid transparent;
@@ -319,8 +308,9 @@ const Button = styled.button`
   transition: border-color 0.7s ease, color 0.7s ease;
 
   &:hover {
-    border-color: rgb(254, 180, 6);
-    color: rgb(254, 180, 6);
+    border-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
+
   }
 `;
 

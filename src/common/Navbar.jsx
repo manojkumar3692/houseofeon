@@ -1,32 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
-    return (
-        <NavContaine>
-            <NameContainer>
-                HOUSE OF EON
-            </NameContainer>
 
-            <LinkContainer>
-                <ul>
-                    <li style={{ color: '#feb406' }}>HOME</li>
-                    <li>ABOUT</li>
-                    <li>CART</li>
-                    <li style={{ color: '#feb406' }}>BUY</li>
-                    <li>PRODUCTS</li>
-                </ul>
-            </LinkContainer>
 
-        </NavContaine>
-    )
+  const navigate=useNavigate()
+  const handleRedirect = () => {
+    window.location.href = "https://www.meesho.com/house-of-eon-bloom-elixir-super-glow-youthful-glowing-skin-enriched-with-niacinamide-rosehip-oil-seabuckthorn-oil-pomegranate-oil-net-weight-30-gm-recommended-for-dry-skin/p/7m6rw1"
+  };
+  return (
+    <NavContaine>
+      <NameContainer onClick={()=>navigate('/')}>
+        HOUSE OF EON
+      </NameContainer>
+
+      <LinkContainer>
+        <ul>
+          <li  onClick={()=>navigate('/')} style={{ color: '#feb406' }}>HOME</li>
+          <li onClick={()=>navigate('/aboutus')}>ABOUT</li>
+          <li>CART</li>
+          <li onClick={handleRedirect} style={{ color: '#feb406' }}>BUY</li>
+          <li>PRODUCTS</li>
+        </ul>
+      </LinkContainer>
+
+    </NavContaine>
+  )
 }
 
 
 export default Navbar;
 
 const NameContainer = styled.div`
+cursor: pointer;
     
 `
 
