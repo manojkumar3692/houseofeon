@@ -38,6 +38,7 @@ const Footer = () => {
                         {/* <li>+1 623-812-4957</li> */}
                         <li>admin@houseofeon.in</li>
                         <li>West Saidapet , Chennai India</li>
+                        <li>9444243639</li>
                     </ul>
                 </ColOne>
             </Container>

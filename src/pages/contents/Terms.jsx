@@ -35,7 +35,7 @@ const TermsAndConditions = () => {
 
                     <SubHeading> Product Orders and Pricing</SubHeading>
                     <Paragraph>
-                        All prices listed on our website are in [insert currency] and are subject to change without notice. We reserve the right to modify, discontinue, or limit the availability of products at any time.
+                        All prices listed on our website are in INR and are subject to change without notice. We reserve the right to modify, discontinue, or limit the availability of products at any time.
                     </Paragraph>
 
                     <SubHeading> Payment and Billing</SubHeading>
@@ -48,7 +48,7 @@ const TermsAndConditions = () => {
                         Due to the nature of our products, House of Eon has a no return policy once the product has been opened. We are committed to the highest standards of quality and customer satisfaction, but due to hygiene and safety regulations, we cannot accept returns or exchanges for products that have been opened or used.
                     </Paragraph>
                     <Paragraph>
-                        <strong>Unopened Products:</strong> If you receive a product that is defective or damaged in transit, please contact us within [insert time frame, e.g., 14 days] of receipt, and we will work with you to resolve the issue.
+                        <strong>Unopened Products:</strong> If you receive a product that is defective or damaged in transit, please contact us within 3 Days of receipt, and we will work with you to resolve the issue.
                     </Paragraph>
                     <Paragraph>
                         <strong>Opened Products:</strong> Once a product has been opened or used, it is considered final sale and cannot be returned.
@@ -61,7 +61,7 @@ const TermsAndConditions = () => {
 
                     <SubHeading>Damaged or Defective Products</SubHeading>
                     <Paragraph>
-                        If you receive a damaged or defective product, please contact our customer service team within [insert time frame, e.g., 7 days] of receiving the product. We may require photographic evidence of the damage for processing.
+                        If you receive a damaged or defective product, please contact our customer service team within 3 Days of receiving the product. We may require photographic evidence of the damage for processing.
                     </Paragraph>
 
                     <SubHeading>Privacy and Security</SubHeading>
@@ -88,6 +88,7 @@ const TermsAndConditions = () => {
                         [admin@houseofeon.in]<br />
                         {/* [Insert contact phone number]<br /> */}
                         [www.houseofeon.in]
+                        [9444243639]
                     </Paragraph>
                 </Content>
             </TermsContainer>
