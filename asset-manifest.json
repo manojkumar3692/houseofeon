@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fc3875c5.css",
-    "main.js": "/static/js/main.75a338f6.js",
+    "main.js": "/static/js/main.824f4d8b.js",
     "static/js/453.69f3745b.chunk.js": "/static/js/453.69f3745b.chunk.js",
     "static/media/HouseofEonCover_14.jpg": "/static/media/HouseofEonCover_14.0ef07bec413e973b0daa.jpg",
     "static/media/HouseofEonCover_11.jpg": "/static/media/HouseofEonCover_11.4167672bd08244047cb0.jpg",
@@ -9,11 +9,11 @@
     "static/media/HouseofEonCover_4.jpg": "/static/media/HouseofEonCover_4.e85cd0ccaa85aecc0d74.jpg",
     "index.html": "/index.html",
     "main.fc3875c5.css.map": "/static/css/main.fc3875c5.css.map",
-    "main.75a338f6.js.map": "/static/js/main.75a338f6.js.map",
+    "main.824f4d8b.js.map": "/static/js/main.824f4d8b.js.map",
     "453.69f3745b.chunk.js.map": "/static/js/453.69f3745b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc3875c5.css",
-    "static/js/main.75a338f6.js"
+    "static/js/main.824f4d8b.js"
   ]
 }
